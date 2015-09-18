@@ -35,10 +35,11 @@ Here is a complete demo file
     <body>
         <div id="map" style="width: 800px; height: 600px"></div>
         <script>
-            var map = L.map('map').setView([40,-100], 12);
+            var map = L.map('map',{                
+                zoomControl:false
+            }).setView([40,-100], 12);
             L.tileLayer('http://tile.osm.org/{z}/{x}/{y}.png', {
                 //maxZoom: 18,
-                zoomControl:false,
                 attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors ' +
                         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ',
                 id: 'mapbox.streets'
