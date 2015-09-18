@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.js"></script>
+        <script src="leaflet-fractional-zoom-control.js"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.0-b1/leaflet.css" />
+    </head>
+    <body>
+        <div id="map" style="width: 800px; height: 600px"></div>
+        <script>
+            var map = L.map('map').setView([40,-100], 12);
+            L.tileLayer('http://tile.osm.org/{z}/{x}/{y}.png', {
+                //maxZoom: 18,
+                zoomControl:false,
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors ' +
+                        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ',
+                id: 'mapbox.streets'
+            }).addTo(map);
+            map.addControl(L.control.fractionalZoom({position: 'topright', zoomIncrement:.2}));
+        </script>
+    </body>
+</html>
