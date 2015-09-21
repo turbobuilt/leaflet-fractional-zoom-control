@@ -2,8 +2,6 @@
 
 This is a simple plugin that makes use of a new feature in the leaflet 1.0 beta, fractional zooming.  You can now zoom by any increment.
 
-The big zoom is on the left and small zoom on the righht
-
 demo: http://turbobuilt.com/leaflet/fractional-zoom-control/demo.html
 
 Usage of the plugin is just like the regular leaflet fractional zoom plugin, except you need to tell it what the zoom increment should be.  To use, YOU MUST BE USING LEAFLET 1.0!
