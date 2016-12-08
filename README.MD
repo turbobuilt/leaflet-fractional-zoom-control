@@ -1,5 +1,7 @@
 # Leaflet Fractional Zoom
 
+##UPDATE!  I think that this plugin is now obsolete.  I haven't tested it yet but I think now you can use the `zoomDelta` property in native leaflet
+
 This is a simple plugin that makes use of a new feature in the leaflet 1.0 beta, fractional zooming.  You can now zoom by any increment.
 
 demo: http://turbobuilt.com/leaflet/fractional-zoom-control/demo.html
